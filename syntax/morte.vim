@@ -13,8 +13,8 @@ highlight link mtTodo Todo
 syntax match   mtComment "\v--.*$" contains=mtTodo
 highlight link mtComment Comment
 
-syntax match mtConst "\v(:)@<=\s*[*]"
-syntax match mtConst "\v(:)@<=\s*BOX"
+syntax match mtConst "\v(:|-\>)@<=\s*[*]"
+syntax match mtConst "\v(:|-\>)@<=\s*BOX"
 highlight link mtConst Constant
 
 syntax match   mtId "\v\s*([a-zA-Z_][a-zA-Z0-9_]*|[\!\#\$\%\&\*\+\.\/\<\=\>\?\@\\\^\|\-\~])\s*(:)@="
